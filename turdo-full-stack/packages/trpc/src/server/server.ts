@@ -9,7 +9,7 @@ const appRouter = t.router({
     getTodoById: publicProcedure.input(z.object({ id: z.string() })).output(z.object({
       id: z.string(),
       name: z.string(),
-      descripton: z.string(),
+      description: z.string(),
       completed: z.boolean(),
       createdAt: z.string(),
       dueDate: z.string().optional(),
@@ -18,7 +18,7 @@ const appRouter = t.router({
     getAllTodos: publicProcedure.output(z.array(z.object({
       id: z.string(),
       name: z.string(),
-      descripton: z.string(),
+      description: z.string(),
       completed: z.boolean(),
       createdAt: z.string(),
       dueDate: z.string().optional(),
@@ -27,7 +27,7 @@ const appRouter = t.router({
     createTodo: publicProcedure.input(z.object({
       id: z.string(),
       name: z.string(),
-      descripton: z.string(),
+      description: z.string(),
       completed: z.boolean(),
       createdAt: z.string(),
       dueDate: z.string().optional(),
@@ -38,7 +38,7 @@ const appRouter = t.router({
     })).output(z.object({
       id: z.string(),
       name: z.string(),
-      descripton: z.string(),
+      description: z.string(),
       completed: z.boolean(),
       createdAt: z.string(),
       dueDate: z.string().optional(),
@@ -49,7 +49,7 @@ const appRouter = t.router({
       date: z.object({
         id: z.string(),
         name: z.string(),
-        descripton: z.string(),
+        description: z.string(),
         completed: z.boolean(),
         createdAt: z.string(),
         dueDate: z.string().optional(),
@@ -61,7 +61,7 @@ const appRouter = t.router({
     })).output(z.object({
       id: z.string(),
       name: z.string(),
-      descripton: z.string(),
+      description: z.string(),
       completed: z.boolean(),
       createdAt: z.string(),
       dueDate: z.string().optional(),

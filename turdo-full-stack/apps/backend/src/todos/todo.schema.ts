@@ -4,7 +4,7 @@ import { z } from "zod";
 export const todoSchema = z.object({ 
     id: z.string(),
     name: z.string(),
-    descripton: z.string(),
+    description: z.string(),
     completed: z.boolean(),
     createdAt: z.string(),
     dueDate: z.string().optional(),
