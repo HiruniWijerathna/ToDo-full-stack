@@ -1,8 +1,7 @@
 {
-  "name": "turdo-full-stack",
+  "name": "@repo/trpc",
   "private": true,
   "scripts": {
-    "approve-builds": "echo Approving builds...",
     "build": "turbo run build",
     "dev": "turbo run dev",
     "lint": "turbo run lint",

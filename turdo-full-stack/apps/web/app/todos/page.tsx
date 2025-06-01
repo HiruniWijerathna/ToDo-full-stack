@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+
 import { trpc } from "../../trpc/client";
 import CreateTodo from "./CreateTode";
 

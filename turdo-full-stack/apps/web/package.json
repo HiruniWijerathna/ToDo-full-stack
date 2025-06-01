@@ -4,8 +4,7 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "approve-builds": "echo Approving builds...",
-    "dev": "next dev -p 3002",
+    "dev": "next dev --turbopack --port 3002",
     "build": "next build",
     "start": "next start",
     "lint": "next lint --max-warnings 0",
@@ -13,16 +12,16 @@
   },
   "dependencies": {
     "@repo/trpc": "workspace:*",
-    "@tailwindcss/postcss": "^4.1.8",
-    "@tanstack/react-query": "^5.79.0",
-    "@trpc/react-query": "^11.1.4",
+  "@tailwindcss/postcss": "^4.1.8",
+    "@tanstack/react-query": "^4.29.0",
+  "@trpc/react-query": "^10.45.0",
+  "@trpc/server": "10.45.0",
     "next": "^15.3.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "tailwindcss": "^4.1.8"
   },
   "devDependencies": {
-    "@repo/eslint-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
     "@rnx-kit/metro-config": "^2.1.0",
     "@types/node": "^22.15.3",
