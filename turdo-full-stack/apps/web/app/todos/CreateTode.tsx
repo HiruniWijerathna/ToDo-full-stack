@@ -32,6 +32,7 @@ export default function CreateTodo() {
 
     return (
         <form onSubmit={handleSubmit} className="flex flex-col gap-4">
+            <h2 className="text-2xl font-bold">Create Todo</h2>
             <input
                 type="text"
                 placeholder="Todo Name"
@@ -61,7 +62,7 @@ export default function CreateTodo() {
                 <option value="medium">Medium</option>
                 <option value="high">High</option>
             </select>
-            <button type="submit" className="bg-blue-500 text-white p-2 rounded">
+            <button type="submit" disabled={mutation.isPending} className="bg-blue-500 text-white p-2 rounded">
                 Create Todo
             </button>
         </form>
