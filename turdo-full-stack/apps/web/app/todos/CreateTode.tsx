@@ -63,7 +63,7 @@ export default function CreateTodo() {
                 <option value="high">High</option>
             </select>
             <button type="submit" disabled={mutation.isPending} className="bg-blue-500 text-white p-2 rounded">
-                Create Todo
+              {mutation.isPending ? 'Creating...' : 'Creating Todo'}  Create Todo
             </button>
         </form>
     );

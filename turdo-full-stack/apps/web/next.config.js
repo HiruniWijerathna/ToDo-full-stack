@@ -4,7 +4,7 @@ const nextConfig = {
         return[
             {
                 source:'/trpc/:path*',
-                destination: `${process.env.TRPC_URL}/:path*`
+                destination: "http://localhost:3000/trpc/:path*", 
             },
         ];
     },
