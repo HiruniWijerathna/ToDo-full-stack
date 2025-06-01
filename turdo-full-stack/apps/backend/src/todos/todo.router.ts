@@ -26,10 +26,10 @@ export class TodosRouter {
         input:createTodoSchema,
         output: todoSchema
     })
-
     createTodo(@Input() todoDate: CreateTodoInput) {
         return this.todosService.createTodo(todoDate);
     }
+    
     @Mutation({
         input: z.object({ 
             id: z.string(),

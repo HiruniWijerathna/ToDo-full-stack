@@ -1,7 +1,6 @@
 import { Module } from '@nestjs/common';
 import { TRPCModule } from 'nestjs-trpc';
 import { TodosModule } from './todos/todos.module';
-import { TodosService } from './todos/todos.service';
 
 
 
@@ -14,6 +13,6 @@ import { TodosService } from './todos/todos.service';
 
   ],
   controllers: [],
-  providers: [TodosService],
+  providers: [],
 })
 export class AppModule {}

@@ -1,10 +1,9 @@
-import { todo } from "node:test";
 import { z } from "zod";
 
 export const todoSchema = z.object({ 
     id: z.string(),
     name: z.string(),
-    description: z.string(),
+    descripton: z.string(),
     completed: z.boolean(),
     createdAt: z.string(),
     dueDate: z.string().optional(),
